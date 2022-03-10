@@ -1,0 +1,41 @@
+*{
+    text-transform: uppercase;
+    color: white;
+    margin: 0px;
+    text-align: center;
+}
+#header{
+    background-color: red;
+    height: 30px;
+}
+#left{
+    background-color: green;
+    height: 400px;
+}
+#middle{
+    height: 400px;
+    background-color: lightskyblue;
+}
+#right{
+    background-color: pink;
+    height: 400px;
+}
+#footer{
+    float: left;
+    background-color: blueviolet;
+    height: 30px;
+    width: 100%;
+}
+
+@media screen and (width < 768px) {
+main { display: flex; }
+main > section { order: 2; min-width: 12em; flex:1; }
+main > #left     { order: 1; width: 200px; }
+main > aside   { order: 3; width: 200px; }
+}
+
+
+/*
+@media screen and (width > 768px) and (width < 992px){
+@media screen and (width > 992px){
+*/
